@@ -1,0 +1,14 @@
+name: 'New Eden'
+type: theme
+description: 'For use on the neweden.co website'
+core: 8.x
+regions:
+  topbar_branding: 'Top Bar - Branding Section'
+  topbar_nav: 'Top Bar - Navigation Section'
+  topbar_tools: 'Top Bar - Tools Section'
+  page_header: 'Page Header Section'
+  content: 'Page Content'
+  sidebar_first: 'Sidebar first'
+  footer: Footer
+libraries:
+  - neweden/global

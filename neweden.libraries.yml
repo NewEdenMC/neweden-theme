@@ -1,0 +1,5 @@
+global:
+  version: VERSION
+  css:
+    main:
+      css/main.css: {}
