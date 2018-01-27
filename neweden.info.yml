@@ -11,3 +11,4 @@ regions:
   footer: Footer
 libraries:
   - neweden/global
+  - neweden/font-awesome

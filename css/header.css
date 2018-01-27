@@ -1,0 +1,194 @@
+header {
+    background: #082567 no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 190px;
+}
+header .banner {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+}
+
+header .banner .branding {
+    font-size: 26px;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0 20px;
+    margin: 0 10px 0 0;
+}
+
+header .banner .branding {
+    float: left;
+    text-transform: lowercase;
+}
+header .banner .branding a {
+    color: #FFF;
+    text-decoration: none;
+}
+header .banner .branding a:hover { text-decoration: none; }
+header .banner .branding img {
+    max-height: 50px;
+    border: none;
+}
+
+header .banner .menus-toggle {
+    float: right;
+    cursor: pointer;
+    padding: 13px 20px;
+    margin: 0 10px 0 0;
+}
+
+header .banner .menus {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+header .banner .menus .main-navigation { float: left; }
+header .banner .menus ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header .banner .menus ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header .banner .menus a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 13px 15px;
+}
+
+@media (max-width: 800px) {
+
+    header .banner .menus-toggle { display: block; }
+
+    header .banner .menus {
+        position: fixed;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        bottom: 100%;
+        margin: 0;
+        padding: 50px 0 0 0;
+        box-sizing: border-box;
+        left: 0;
+        overflow: auto;
+        -webkit-transition: bottom .5s;
+        -moz-transition: bottom .5s;
+        -o-transition: bottom .5s;
+        transition: bottom .5s;
+    }
+    header .banner .menus.open {
+        bottom: 0;
+    }
+    header .banner .menus .main-navigation,
+    header .banner .menus .tools {
+        float: left;
+        width: 100%;
+    }
+    header .banner .menus ul li { width: 100%; }
+    header .banner .menus ul li a {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    header .banner .menus-toggle { display: none; }
+
+    header .banner .menus {
+        position: unset;
+        margin: 0 30px 0 20px;
+        height: auto;
+        widtH: auto;
+    }
+    header .banner .menus .tools { float: right; }
+
+    header .banner .menus a:hover { background-color: #232c33; }
+
+}
+
+/**
+ * Menu Icon
+ * Courtesy of https://codepen.io/designcouch/pen/Atyop
+ */
+
+.menus-icon {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.menus-icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #FFF;
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.menus-icon span:nth-child(1) {
+    top: 0;
+}
+
+.menus-icon span:nth-child(2),
+.menus-icon span:nth-child(3) {
+    top: 10px;
+}
+
+.menus-icon span:nth-child(4) {
+    bottom: 0;
+}
+
+.menus-icon.open span:nth-child(1) {
+    top: 13px;
+    width: 0%;
+    left: 50%;
+}
+
+.menus-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menus-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.menus-icon.open span:nth-child(4) {
+    top: 13px;
+    width: 0%;
+    left: 50%;
+}

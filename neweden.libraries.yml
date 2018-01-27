@@ -1,5 +1,10 @@
 global:
   version: VERSION
   css:
-    main:
-      css/main.css: {}
+    theme:
+      css/elements.css: {}
+      css/header.css: {}
+  js:
+    js/header.js: {}
+  dependencies:
+    - core/jquery

@@ -55,7 +55,17 @@
         {% endif %}
 
         {% if page.header_nav or page.header_tools %}
-        <nav>
+
+        <div class="menus-toggle">
+            <div class="menus-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="menus">
 
             {% if page.header_nav %}
             <div class="main-navigation">
@@ -69,7 +79,7 @@
             </div>
             {% endif %}
 
-        </nav>
+        </div>
         {% endif %}
 
     </div>
