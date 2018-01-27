@@ -45,3 +45,57 @@
  * @ingroup themeable
  */
 #}
+<header>
+    <div class="banner">
+
+        {% if page.header_branding %}
+        <div class="branding">
+            {{ page.header_branding }}
+        </div>
+        {% endif %}
+
+        {% if page.header_nav or page.header_tools %}
+        <nav>
+
+            {% if page.header_nav %}
+            <div class="main-navigation">
+                {{ page.header_nav }}
+            </div>
+            {% endif %}
+
+            {% if page.header_tools %}
+            <div class="tools">
+                {{ page.header_tools }}
+            </div>
+            {% endif %}
+
+        </nav>
+        {% endif %}
+
+    </div>
+</header>
+
+{% if page.sidebar_first or page.content %}
+<main>
+
+    {% if page.sidebar_first %}
+    <aside>
+        {{ page.sidebar_first }}
+    </aside>
+    {% endif %}
+
+    {% if page.content %}
+    <div id="main-content">
+        <div class="visually-hidden"><a tabindex="-1" id="main-content"></a></div>
+        {{ page.content }}
+    </div>
+    {% endif %}
+
+</main>
+{% endif %}
+
+{% if page.footer %}
+<footer>
+    {{ page.footer }}
+</footer>
+{% endif %}
