@@ -3,6 +3,8 @@ base:
   css:
     base:
       css/base.css: {}
+    layout:
+      css/layout/main.css: {}
 
 header:
   version: VERSION
