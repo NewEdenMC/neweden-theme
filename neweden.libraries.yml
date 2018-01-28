@@ -5,6 +5,8 @@ base:
       css/base.css: {}
     layout:
       css/layout/main.css: {}
+    component:
+      css/components/tabs.css: {}
 
 header:
   version: VERSION

@@ -20,4 +20,5 @@ libraries-override:
   classy/base:
     css:
       component:
+        css/components/tabs.css: false
         css/components/menu.css: false
