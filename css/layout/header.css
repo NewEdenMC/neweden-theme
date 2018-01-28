@@ -1,7 +1,7 @@
 header {
     background: #082567 no-repeat center;
     -webkit-background-size: cover;
-    background-size: cover;
+            background-size: cover;
     min-height: 190px;
 }
 header .banner {
