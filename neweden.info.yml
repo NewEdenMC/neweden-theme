@@ -15,3 +15,9 @@ regions:
 libraries:
   - neweden/base
   - neweden/header
+
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/menu.css: false
