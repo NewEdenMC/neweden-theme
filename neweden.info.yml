@@ -3,6 +3,7 @@ type: theme
 description: 'For use on the neweden.co website'
 core: 8.x
 base theme: classy
+
 regions:
   header_branding: 'Header - Branding Section'
   header_nav: 'Header - Main Navigation Section'
@@ -10,6 +11,7 @@ regions:
   content: 'Page Content'
   sidebar_first: 'Sidebar first'
   footer: Footer
+
 libraries:
-  - neweden/global
-  - neweden/font-awesome
+  - neweden/base
+  - neweden/header

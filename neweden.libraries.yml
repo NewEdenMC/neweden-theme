@@ -1,9 +1,14 @@
-global:
+base:
   version: VERSION
   css:
-    theme:
-      css/elements.css: {}
-      css/header.css: {}
+    base:
+      css/base.css: {}
+
+header:
+  version: VERSION
+  css:
+    layout:
+      css/layout/header.css: {}
   js:
     js/header.js: {}
   dependencies:
