@@ -7,7 +7,7 @@ _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: neweden_local_tasks
 theme: neweden
-region: content
+region: content_tools
 weight: -5
 provider: null
 plugin: local_tasks_block

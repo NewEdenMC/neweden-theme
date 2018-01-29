@@ -9,7 +9,7 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: neweden_breadcrumbs
 theme: neweden
-region: content
+region: content_tools
 weight: -7
 provider: null
 plugin: system_breadcrumb_block

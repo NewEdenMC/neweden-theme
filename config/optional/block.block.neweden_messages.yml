@@ -9,7 +9,7 @@ _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: neweden_messages
 theme: neweden
-region: content
+region: content_tools
 weight: -4
 provider: null
 plugin: system_messages_block

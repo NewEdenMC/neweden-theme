@@ -8,8 +8,9 @@ regions:
   header_branding: 'Header - Branding Section'
   header_nav: 'Header - Main Navigation Section'
   header_tools: 'Header - Tools Section'
-  content: 'Page Content'
   sidebar_first: 'Sidebar first'
+  content_tools: 'Main - Page Tools'
+  content: 'Main - Page Content'
   footer: Footer
 
 libraries:

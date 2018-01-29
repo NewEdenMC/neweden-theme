@@ -1,0 +1,11 @@
+base:
+  version: VERSION
+  css:
+    layout:
+      css/layout/main.css: {}
+
+header:
+  version: VERSION
+  css:
+    layout:
+      css/layout/header.css: {}

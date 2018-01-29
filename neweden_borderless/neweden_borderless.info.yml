@@ -1,0 +1,17 @@
+name: 'New Eden - Borderless'
+type: theme
+description: 'For use on the neweden.co website for pages which have edge to edge fluid grids'
+core: 8.x
+base theme: neweden
+
+regions:
+  header_branding: 'Header - Branding Section'
+  header_nav: 'Header - Main Navigation Section'
+  header_tools: 'Header - Tools Section'
+  content_tools: 'Main - Page Tools'
+  content: 'Main - Page Content'
+  footer: Footer
+
+libraries:
+  - neweden_borderless/base
+  - neweden_borderless/header
