@@ -1,7 +1,6 @@
 .tabs {
-    float: left;
-    width: 100%;
     border-bottom: #2a63ff solid 1px;
+    margin: 10px 0;
 }
 .tabs ul {
     list-style-type: none;
@@ -10,7 +9,7 @@
 }
 .tabs ul li {
     list-style-type: none;
-    float: left;
+    display: inline-block;
     margin: 0 6px;
     padding: 0;
 }
