@@ -6,6 +6,7 @@ base:
     layout:
       css/layout/main.css: {}
     component:
+      css/components/breadcrumb.css: {}
       css/components/tabs.css: {}
 
 header:
