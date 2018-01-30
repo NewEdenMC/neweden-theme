@@ -1,4 +1,6 @@
 header {
+    float: left;
+    width: 100%;
     background: #082567 no-repeat center;
     -webkit-background-size: cover;
             background-size: cover;
