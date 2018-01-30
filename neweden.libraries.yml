@@ -8,6 +8,7 @@ base:
     component:
       css/components/breadcrumb.css: {}
       css/components/messages.css: {}
+      css/components/panels_ipe.css: {}
       css/components/tabs.css: {}
 
 header:

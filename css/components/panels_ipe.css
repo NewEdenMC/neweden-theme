@@ -1,0 +1,8 @@
+#panels-ipe-tray,
+.ipe-blockpicker-item a,
+.ipe-category:hover,
+.ipe-category.active,
+.ipe-actions,
+.ipe-actions-block {
+    color: #000;
+}
