@@ -1,0 +1,29 @@
+<?php
+
+function neweden_borderless_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+    // Work-around for a core bug affecting admin themes. See issue #943212.
+    if (isset($form_id)) {
+        return;
+    }
+
+    $form['neweden_borderless_settings'] = array(
+        '#type' => 'details',
+        '#title' => t('Borderless Settings'),
+        '#open' => true,
+
+        'hide_content_tools_if_no_edit' => array(
+            '#type' => 'checkbox',
+            '#title' => t('Hide Content Tools Region on nodes that the user does not have access to edit'),
+            '#default_value' => theme_get_setting('hide_content_tools_if_no_edit'),
+        )
+    );
+}
+
+function neweden_borderless_preprocess_page(&$variables) {
+    $variables['hide_content_tools'] = false;
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if (theme_get_setting('hide_content_tools_if_no_edit') && $node instanceof \Drupal\node\NodeInterface) {
+        if (!$node->access('update'))
+            $variables['hide_content_tools'] = true;
+    }
+}

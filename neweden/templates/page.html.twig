@@ -94,7 +94,7 @@
     </aside>
     {% endif %}
 
-    {% if page.content_tools %}
+    {% if page.content_tools and not hide_content_tools %}
         <div id="content-tools">
             {{ page.content_tools }}
         </div>
