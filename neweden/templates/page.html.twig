@@ -45,6 +45,10 @@
  * @ingroup themeable
  */
 #}
+{% set show = {
+    sidebar_first: (page.sidebar_first and not hide_sidebar_first),
+    content_tools: (page.content_tools and not hide_content_tools),
+} %}
 <header>
     <div class="banner">
 
@@ -54,7 +58,7 @@
         </div>
         {% endif %}
 
-        {% if page.header_nav or page.header_tools %}
+        {% if page.header_nav or page.header_tools%}
 
         <div class="menus-toggle">
             <div class="menus-icon">
@@ -85,29 +89,39 @@
     </div>
 </header>
 
-{% if page.sidebar_first or page.content_tools or page.content %}
-<main>
+{% if show.sidebar_first or show.content_tools or page.content %}
+{% set mainWrapperClasses = [
+    'main-wrapper',
+    show.sidebar_first ? 'one-sidebar sidebar-first'
+] %}
+<div{{ attributes.addClass(mainWrapperClasses) }}>
 
-    {% if page.sidebar_first and not hide_sidebar_first %}
+    {% if show.sidebar_first %}
     <aside>
         {{ page.sidebar_first }}
     </aside>
     {% endif %}
 
-    {% if page.content_tools and not hide_content_tools %}
-        <div id="content-tools">
-            {{ page.content_tools }}
+    {% if show.content_tools or page.content %}
+    <main>
+
+        {% if show.content_tools %}
+            <div id="content-tools">
+                {{ page.content_tools }}
+            </div>
+        {% endif %}
+
+        {% if page.content %}
+        <div id="main-content">
+            <div class="visually-hidden"><a tabindex="-1" id="main-content"></a></div>
+            {{ page.content }}
         </div>
+        {% endif %}
+
+    </main>
     {% endif %}
 
-    {% if page.content %}
-    <div id="main-content">
-        <div class="visually-hidden"><a tabindex="-1" id="main-content"></a></div>
-        {{ page.content }}
-    </div>
-    {% endif %}
-
-</main>
+</div>
 {% endif %}
 
 {% if page.footer %}

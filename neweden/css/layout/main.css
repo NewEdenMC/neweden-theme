@@ -1,4 +1,4 @@
-main {
+.main-wrapper {
     clear: both;
     max-width: 1200px;
     -webkit-box-sizing: border-box;
@@ -7,5 +7,10 @@ main {
     margin: 0 auto;
     padding: 20px 30px;
 }
+main { display: block; }
+.main-wrapper.sidebar-first main { margin-left: 270px; }
 
-
+aside {
+    float: left;
+    width: 250px;
+}
