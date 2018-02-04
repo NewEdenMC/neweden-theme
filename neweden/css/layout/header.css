@@ -26,7 +26,7 @@ header .banner .branding {
     text-transform: lowercase;
 }
 header .banner .branding a {
-    color: #FFF;
+    color: #FEFFFF;
     text-decoration: none;
 }
 header .banner .branding a:hover { text-decoration: none; }
@@ -61,7 +61,7 @@ header .banner .menus ul li {
 }
 header .banner .menus a {
     display: block;
-    color: #FFF;
+    color: #FEFFFF;
     text-decoration: none;
     padding: 13px 15px;
 }
@@ -145,7 +145,7 @@ header .banner .menus a {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #FFF;
+    background: #FEFFFF;
     border-radius: 4px;
     opacity: 1;
     left: 0;
@@ -174,7 +174,7 @@ header .banner .menus a {
 
 .menus-icon.open span:nth-child(1) {
     top: 13px;
-    width: 0%;
+    width: 0;
     left: 50%;
 }
 
@@ -194,6 +194,6 @@ header .banner .menus a {
 
 .menus-icon.open span:nth-child(4) {
     top: 13px;
-    width: 0%;
+    width: 0;
     left: 50%;
 }
