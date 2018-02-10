@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 body {
     margin: 0;
     background-color: #161a1d;
     color: #FEFFFF;
-    font-family: "Cabin", "Trebuchet MS", "Gill Sans", sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 h1 {
     font-size: 34px;
     font-weight: normal;
     margin: 0 0 20px 0;
+    font-family: 'Rubik', sans-serif;
 }
 h2 {
     font-size: 24px;
@@ -16,4 +20,5 @@ h2 {
     margin: 15px 0 10px 0;
     border-bottom: 1px solid #232C33;
     padding: 0 0 5px 0;
+    font-family: 'Rubik', sans-serif;
 }
