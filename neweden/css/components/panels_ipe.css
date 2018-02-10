@@ -1,8 +1,83 @@
-#panels-ipe-tray,
-.ipe-blockpicker-item a,
+.ipe-tab,
+.ipe-tab-content,
+div.ipe-actions,
+div.ipe-actions-block {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.ipe-tab a,
+.ipe-layout-label,
+.ipe-current-layout-label,
+.ipe-actions a,
+.ipe-actions a:hover,
+.ipe-category-picker-search input[type="submit"],
+.ipe-category,
+.ipe-category-count,
+.ipe-form input[type="submit"],
+.ipe-form input[type="submit"]:hover,
+.ipe-blockpicker-item a:hover {
+    color: #FEFFFF;
+}
+
+.ipe-tab.active a,
+.ipe-tab a:hover {
+    color: rgb(67, 125, 33);
+    border-bottom-color: rgb(67, 125, 33);
+}
+
+[data-tab-id="cancel"] a:hover,
+[data-tab-id="cancel"].active a {
+    color: #7d0000;
+    border-color: #7d0000;
+}
+
+.ipe-category-picker-search input[type="submit"],
+html[dir="rtl"] .ipe-tab:first-child,
+html[dir="rtl"] .ipe-tab:last-child,
+.ipe-tab:first-child,
+.ipe-tab:last-child,
+.ipe-tab a,
+.ipe-tab,
+.ipe-tab-content,
+.ipe-category-picker-bottom.top-open,
+.ipe-category-picker-top > h4,
+.ipe-category-picker-search,
+.ipe-category-picker-search input[type="submit"],
+.ipe-create-category {
+    border-color: #232C33
+}
+
+.ipe-droppable.hover,
 .ipe-category:hover,
 .ipe-category.active,
-.ipe-actions,
-.ipe-actions-block {
-    color: #000;
+.ipe-category.active:after,
+.ipe-blockpicker-item a:hover,
+.ipe-create-category:hover,
+.ipe-create-category.active,
+.ipe-create-category {
+    background: rgba(88, 160, 44, 0.70);
+    border-color: rgb(67, 125, 33);
+}
+
+.ipe-form input[type="submit"]:hover,
+.ipe-layout:hover,
+.ipe-create-category {
+    border-color: rgb(67, 125, 33);
+}
+
+.ipe-blockpicker-item a {
+    background: none;
+}
+
+.ipe-category-picker-bottom {
+    overflow-x: auto;
+}
+
+.ipe-category-picker-top {
+    overflow-y: auto;
+}
+
+.ipe-block-form .front,
+.ipe-block-form .back {
+    background: unset;
 }
