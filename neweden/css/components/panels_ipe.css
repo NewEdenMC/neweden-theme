@@ -1,3 +1,7 @@
+#panels-ipe-tray, #panels-ipe-tray a, #panels-ipe-tray p {
+    font-family: inherit;
+}
+
 .ipe-tab,
 .ipe-tab-content,
 div.ipe-actions,
@@ -43,7 +47,9 @@ html[dir="rtl"] .ipe-tab:last-child,
 .ipe-category-picker-top > h4,
 .ipe-category-picker-search,
 .ipe-category-picker-search input[type="submit"],
-.ipe-create-category {
+.ipe-create-category,
+.ipe-layout,
+.ipe-layout-label {
     border-color: #232C33
 }
 
@@ -54,14 +60,15 @@ html[dir="rtl"] .ipe-tab:last-child,
 .ipe-blockpicker-item a:hover,
 .ipe-create-category:hover,
 .ipe-create-category.active,
-.ipe-create-category {
+.ipe-create-category,
+.ipe-layout:hover {
     background: rgba(88, 160, 44, 0.70);
     border-color: rgb(67, 125, 33);
 }
 
 .ipe-form input[type="submit"]:hover,
-.ipe-layout:hover,
-.ipe-create-category {
+.ipe-create-category,
+.ipe-layout:hover > .ipe-layout-label {
     border-color: rgb(67, 125, 33);
 }
 
