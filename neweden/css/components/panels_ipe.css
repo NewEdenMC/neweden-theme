@@ -1,3 +1,6 @@
+#panels-ipe-tray a { text-decoration: none; }
+#panels-ipe-tray a:hover { text-decoration: none; }
+
 #panels-ipe-tray, #panels-ipe-tray a, #panels-ipe-tray p {
     font-family: inherit;
 }

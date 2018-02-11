@@ -8,6 +8,20 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+a {
+    text-decoration: underline;
+    color: #FEFFFF;
+    -webkit-transition: .2s ease-in-out;
+       -moz-transition: .2s ease-in-out;
+        -ms-transition: .2s ease-in-out;
+         -o-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+}
+a:hover {
+    text-decoration: none;
+    color: #C82D6F;
+}
+
 h1 {
     font-size: 34px;
     font-weight: normal;
