@@ -1,0 +1,29 @@
+aside .block {
+    border: 1px solid #232C33;
+    background-color: #38424a;
+}
+aside .block h2 {
+    margin: 0;
+    border: 0;
+    padding: 8px;
+    background-color: #107aff;
+    font-size: 18px;
+}
+aside .menu, aside .menu li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+aside .menu a {
+    display: block;
+    margin: 0;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+aside .menu a:hover {
+    background-color: #566672;
+    color: #feffff;
+}
+aside .menu .menu {
+    margin-left: 10px;
+}

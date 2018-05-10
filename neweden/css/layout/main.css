@@ -5,3 +5,12 @@ aside {
     float: left;
     width: 250px;
 }
+
+@media (max-width: 400px) {
+
+    .main-wrapper.sidebar-first main { margin-left: 0; }
+    aside {
+        float: none;
+    }
+
+}
