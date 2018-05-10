@@ -91,6 +91,7 @@
 
 {% if show.sidebar_first or show.content_tools or page.content %}
 {% set mainWrapperClasses = [
+    'section-wrapper',
     'main-wrapper',
     show.sidebar_first ? 'one-sidebar sidebar-first'
 ] %}
@@ -125,7 +126,9 @@
 {% endif %}
 
 {% if page.footer %}
-<footer>
-    {{ page.footer }}
-</footer>
+<div class="footer-wrapper">
+    <footer class="section-wrapper">
+        {{ page.footer }}
+    </footer>
+</div>
 {% endif %}

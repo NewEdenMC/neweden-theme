@@ -5,6 +5,7 @@ base:
       css/base.css: {}
     layout:
       css/layout/main.css: {}
+      css/layout/footer.css: {}
     component:
       css/components/breadcrumb.css: {}
       css/components/messages.css: {}
